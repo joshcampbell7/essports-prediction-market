@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "market": "Team A vs Team B - Match Winner",
+    "status": "Active",
+    "volume": "12,345 PRE",
+    "participants": 89
+  },
+  {
+    "id": "2",
+    "market": "Championship Winner 2024",
+    "status": "Active",
+    "volume": "8,901 PRE",
+    "participants": 67
+  },
+  {
+    "id": "3",
+    "market": "Player MVP Award",
+    "status": "Resolved",
+    "volume": "5,432 PRE",
+    "participants": 45
+  },
+  {
+    "id": "4",
+    "market": "Total Score Over/Under",
+    "status": "Active",
+    "volume": "3,210 PRE",
+    "participants": 34
+  },
+  {
+    "id": "5",
+    "market": "First Blood Prediction",
+    "status": "Resolved",
+    "volume": "2,109 PRE",
+    "participants": 23
+  },
+  {
+    "id": "6",
+    "market": "First Blood Prediction",
+    "status": "Resolved",
+    "volume": "2,109 PRE",
+    "participants": 23
+  },
+  {
+    "id": "7",
+    "market": "First Blood Prediction",
+    "status": "Resolved",
+    "volume": "2,109 PRE",
+    "participants": 23
+  },
+  {
+    "id": "8",
+    "market": "First Blood Prediction",
+    "status": "Resolved",
+    "volume": "2,109 PRE",
+    "participants": 23
+  },
+  {
+    "id": "9",
+    "market": "First Blood Prediction",
+    "status": "Resolved",
+    "volume": "2,109 PRE",
+    "participants": 23
+  }
+]
+

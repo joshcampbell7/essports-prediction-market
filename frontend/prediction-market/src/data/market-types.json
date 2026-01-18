@@ -1,0 +1,68 @@
+{
+    "marketTypes": [
+        {
+            "value": "Call of Duty",
+            "label": "Call of Duty"
+        },
+        {
+            "value": "Valorant",
+            "label": "Valorant"
+        },
+        {
+            "value": "Counter Strike 2",
+            "label": "Counter Strike 2"
+        },
+        {
+            "value": "Transfers",
+            "label": "Transfers"
+        },
+        {
+            "value": "Streamer Siders",
+            "label": "Streamer Siders"
+        },
+        {
+            "value": "Esports Misc",
+            "label": "Esports Misc"
+        },
+        {
+            "value": "Kills",
+            "label": "Kills"
+        },
+        {
+            "value": "K/D",
+            "label": "K/D"
+        },
+        {
+            "value": "Tournaments",
+            "label": "Tournaments"
+        },
+        {
+            "value": "Playoffs",
+            "label": "Playoffs"
+        },
+        {
+            "value": "Map/Game",
+            "label": "Map/Game"
+        },
+        {
+            "value": "Awards",
+            "label": "Awards"
+        },
+        {
+            "value": "Team Performance",
+            "label": "Team Performance"
+        },
+        {
+            "value": "Rosters",
+            "label": "Rosters"
+        },
+        {
+            "value": "First Blood",
+            "label": "First Blood"
+        },
+        {
+            "value": "Round Totals",
+            "label": "Round Totals"
+        }
+    ]
+}
