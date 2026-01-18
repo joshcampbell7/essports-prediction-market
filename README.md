@@ -1,4 +1,4 @@
-# Esports Prediction Market
+# Esports Prediction Market https://essports-prediction-market.vercel.app/
 
 A decentralized prediction market for esports built on Ethereum. Think Polymarket but specifically for Call of Duty, Valorant, CS2, and other esports events. Currently running on Sepolia testnet with play money.
 
