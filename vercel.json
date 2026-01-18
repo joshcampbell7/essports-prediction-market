@@ -1,7 +1,5 @@
 {
   "buildCommand": "cd frontend/prediction-market && npm install && npm run build",
   "outputDirectory": "frontend/prediction-market/.next",
-  "installCommand": "cd frontend/prediction-market && npm install",
-  "framework": null,
-  "rootDirectory": "frontend/prediction-market"
+  "installCommand": "cd frontend/prediction-market && npm install"
 }
