@@ -2,7 +2,7 @@
 
 A decentralized prediction market for esports built on Ethereum. Think Polymarket but specifically for Call of Duty, Valorant, CS2, and other esports events. Currently running on Sepolia testnet with play money.
 
-![Esports Prediction Market Homepage](./frontend/prediction-market/public/screenshot.png)
+![Esports Prediction Market Homepage](./images/screenshot.png)
 
 ## What I Built
 
