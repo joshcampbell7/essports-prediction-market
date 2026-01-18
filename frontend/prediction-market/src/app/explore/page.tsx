@@ -5,7 +5,7 @@ import { NavigationMenuDemo } from "@/components/navigation-menu-demo";
 import { MarketTypeNav } from "@/components/market-type-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Clock, TrendingUp } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import SingleCardComponent from "@/components/single-card-component";
 import { MarketInfo } from "@/interface/getMarketInfo";
 import { readMarketsAbi } from '@/components/admin/abi'
@@ -55,7 +55,7 @@ function mapMarketInfo(
   };
 }
 
-export default function ExplorePage() {
+function ExploreContent() {
   const { address, isConnected } = useAccount();
   const [markets, setMarkets] = useState<MarketInfo[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -233,5 +233,45 @@ export default function ExplorePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ExplorePage() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen flex-col">
+        <nav className="border-b p-4 flex justify-center">
+          <NavigationMenuDemo />
+        </nav>
+        <div className="border-b bg-white dark:bg-zinc-950">
+          <div className="flex items-center justify-center px-4 py-2">
+            <Skeleton className="h-8 w-64" />
+          </div>
+        </div>
+        <div className="flex min-h-screen flex-col bg-zinc-50 font-sans dark:bg-black">
+          <div className="flex justify-center w-full px-4 py-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <Card key={i} className="w-full">
+                  <CardHeader>
+                    <Skeleton className="h-6 w-full mb-2" />
+                    <Skeleton className="h-4 w-3/4 mx-auto" />
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-2 gap-2 mb-2">
+                      <Skeleton className="h-16 w-full" />
+                      <Skeleton className="h-16 w-full" />
+                    </div>
+                    <Skeleton className="h-4 w-1/2" />
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <ExploreContent />
+    </Suspense>
   );
 }

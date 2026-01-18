@@ -13,7 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BarChart3, Coins, Users } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { config } from "@/lib/config";
 import { MarketTypeNav } from "@/components/market-type-nav";
 import { MarketInfo } from "@/interface/getMarketInfo";
@@ -137,7 +137,9 @@ export default function Home() {
       <nav className="border-b p-4 flex justify-center">
         <NavigationMenuDemo />
       </nav>
-      <MarketTypeNav />
+      <Suspense fallback={<div className="border-b bg-white dark:bg-zinc-950 h-12" />}>
+        <MarketTypeNav />
+      </Suspense>
       <div className="flex min-h-screen flex-col bg-zinc-50 font-sans dark:bg-black">
         {/* Main Title Section - Centered below navigation */}
         <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-b from-zinc-50 to-white dark:from-black dark:to-zinc-950">
